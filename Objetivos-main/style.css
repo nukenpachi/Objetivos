@@ -11,7 +11,7 @@
 
 body{
     background-color: var(--cor-de-fundo);
-    color: var(var(--branco));
+    color: var(--branco);
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -48,12 +48,43 @@ body{
     align-items: center;
     width: 100%;
     border-bottom: 4px solid var(--botao-ativo);
-    border-left: 4px solid var(--botao-ativo);
-    border-right: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
     border-top: none;
 
 }
 
-@media screen and (min-width: 768px){
-    
+.botao:first-child{
+    border-radius: 40px 40px 0 0;
+
 }
+
+
+.botoes{
+    display: block;
+}
+
+.botao.ativo{
+     background-color: var(--botao-ativo);
+     border-bottom: 4px solid var(--ciano);
+
+}
+
+.abas-textos{
+    background-color: var(--texto-fundo);
+    padding: 40px;
+    border-radius: 0 0 40px 40px;
+}
+
+@media screen and (min-width: 768px){
+    .botoes{
+        display: flex;
+    }
+    .botao:first-child{
+        border-radius: 40px 0 0 0;
+    }
+    .botao:last-child{
+        border-radius: 0 40px 0 0;
+    }
+}
+
