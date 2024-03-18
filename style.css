@@ -76,6 +76,25 @@ body{
     border-radius: 0 0 40px 40px;
 }
 
+.aba-conteudo-ativo{
+    display: block;
+}
+
+.aba-conteudo{
+    display: none;
+}
+
+.aba-conteudo-titulo-principal{
+    border-radius: 40px 0 0 0;
+
+}
+
+.aba-conteudo-titulo-segundario{
+    text-align: center;
+    color: var(--ciano);
+    text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px){
     .botoes{
         display: flex;
