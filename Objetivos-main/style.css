@@ -4,9 +4,9 @@
     --cor-de-fundo: #1E1E1E;
     --verde: #6EF4E4;
     --branco: #FFFFFF;
-    --botao-ativo: #9367A8;
+    --botao-ativo:#9367A8;
     --botao-inativo: rgba(164, 87, 200, 0.5);
-    --texto-fundo:  rgba(164, 87, 200, 0.3);
+    --texto-fundo: rgba(164, 87, 200, 0.3);
 }
 
 body {
@@ -88,7 +88,10 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
-
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
 
 @media screen and (min-width: 768px) {
     .botoes {
